@@ -1,0 +1,121 @@
+.formContainer{
+    height: 100vh;
+    background-color: rgb(173, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:  1px solid black;
+    padding: 20px 30px;
+    border-radius:10px ;
+    background-color: white;
+    width: 20%;
+}
+
+.register{
+    font-weight: bold;
+    font-size: large;
+    margin: 15px;
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.register-form input{
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: white;
+    outline: none;
+    padding: 8px;
+}
+
+.registerBtn{
+    background-color: rgb(77, 77, 237);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.imageContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 600px;
+    gap: 10px;
+    justify-items: center;
+    padding: 20px 10px;
+}
+
+.image:nth-child(even){
+ align-self:flex-end ;
+}
+
+
+.imageContainerWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: 85%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    overflow: scroll;
+
+}
+
+.homeContainer{
+    height: 100vh;
+    background-color: rgb(122, 122, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image{
+    height: 300px;
+    width: 400px ;
+    object-fit: cover;
+}
+
+.NavbarContainer{
+    position: absolute;
+    top: 0%;
+    height: 50px;
+    background-color: rgb(98, 67, 98);
+    z-index: 10;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.userInfo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px ;
+}
+
+.userInfo .data{
+    display: flex;
+    gap: 10px;
+} 
+
+.imageContainerWrapper {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.imageContainerWrapper::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
